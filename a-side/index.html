@@ -32,6 +32,21 @@
 	</script><script>utmx('url','A/B');</script>
 	<!-- End of Google Analytics Content Experiment code -->
 
+	<script>
+	var currentPage = window.location.href;
+	window.onload = function() {
+		setInterval(function() {
+		    if (currentPage !== window.location.href) {
+		        currentPage = window.location.href;
+		        var newPage = window.location.pathname + window.location.hash
+				ga('set', 'page', newPage);
+				ga('send', 'pageview');
+				console.log(newPage);        
+		    }
+		}, 100);
+	};
+	</script>
+
 	<meta charset="utf-8" />
 	<title ng-bind="windowTitle">
 		InVision
@@ -2293,28 +2308,3 @@ width="{{ Math.round(picture.width * (picture.displayScale || screen.displayScal
 
 </body>
 </html>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120435393-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-120435393-1');
-</script>
-
-<script>
-var currentPage = window.location.href;
-window.onload = function() {
-	setInterval(function() {
-	    if (currentPage !== window.location.href) {
-	        currentPage = window.location.href;
-	        var newPage = window.location.pathname + window.location.hash
-			ga('set', 'page', newPage);
-			ga('send', 'pageview');
-			console.log(newPage);        
-	    }
-	}, 100);
-};
-</script>
