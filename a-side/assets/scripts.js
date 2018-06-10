@@ -7353,8 +7353,7 @@ user_hash: config.intercomUserHash
 }
 }
 };
-var subdomain = window.location.hostname.split(".")[0];
-var userID = (config.singleTenantConfig && config.singleTenantConfig.useSingleTenantAnalytics) ? subdomain + "-" + user.id : user.id;
+var userID = formatUserId(user.id);
 var callback = function () {
 if ( typeof $window.mixpanel !== "undefined" && $window.mixpanel != null ) {
 $window.mixpanel.name_tag(null);
@@ -7535,7 +7534,10 @@ var amplitudeFinishedInit = false;
 function initIntercomMessenger() {
 if ( window.Intercom ) {
 window.Intercom("boot", {
-app_id: config.intercomAppID
+app_id: config.intercomAppID,
+user_id: formatUserId( config.userID ),
+email: config.email,
+user_hash: config.intercomUserHash
 });
 }
 }
@@ -7587,7 +7589,7 @@ errorLogService.exceptionHandler( error );
 function identifyGrowth( id, traits ) {
 if ( amplitudeFinishedInit ) {
 var subdomain = window.location.hostname.split(".")[0];
-var userID = (config.singleTenantConfig && config.singleTenantConfig.useSingleTenantAnalytics) ? subdomain + "-" + id : id;
+var userID = formatUserId(id);
 try {
 getSafeAmplitudeInstance().setUserId( userID );
 getSafeAmplitudeInstance().setUserProperties( traits );
@@ -7692,6 +7694,14 @@ var properties = {
 };
 var event = "App - Browsing - Visit Page";
 trackGrowth(event, properties);
+}
+function formatUserId(userId) {
+var subdomain = window.location.hostname.split(".")[0];
+var userKey = (config.singleTenantConfig && config.singleTenantConfig.useSingleTenantAnalytics) ? subdomain + "-" + userId : userId;
+if ( config.serverType == "LOCAL" && config.uniqueLocalUserPrefix && config.uniqueLocalUserPrefix.length > 0 ) {
+userKey = config.uniqueLocalUserPrefix + "-" + userKey;
+}
+return userKey;
 }
 return {
 identifyUser: identifyUser,
