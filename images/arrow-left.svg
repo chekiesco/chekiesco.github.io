@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="18px" viewBox="0 0 10 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Back (24)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---About" transform="translate(-143.000000, -63.000000)">
+            <g id="Header" transform="translate(128.000000, 52.000000)">
+                <g id="Back">
+                    <g id="Back-(24)" transform="translate(20.000000, 20.000000) scale(-1, 1) translate(-20.000000, -20.000000) translate(8.000000, 8.000000)">
+                        <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M16.1425768,11.3319166 C16.165197,11.3498334 16.1870228,11.3692414 16.2079221,11.3901407 C16.471696,11.6539146 16.4979203,12.0652829 16.2865949,12.3584044 C16.2625277,12.3922719 16.2353132,12.4245894 16.2049513,12.4549513 C16.1964918,12.4634108 16.1878804,12.471626 16.1791261,12.4795968 L8.78330086,19.8754221 C8.49040764,20.1683153 8.01553391,20.1683153 7.72264069,19.8754221 C7.42974747,19.5825288 7.42974747,19.1076551 7.72264069,18.8147619 L14.6133712,11.9240314 L7.71966991,5.03033009 C7.4267767,4.73743687 7.4267767,4.26256313 7.71966991,3.96966991 C8.01256313,3.6767767 8.48743687,3.6767767 8.78033009,3.96966991 L16.1425768,11.3319166 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

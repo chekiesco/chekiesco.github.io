@@ -1,0 +1,250 @@
+html {
+	/*border: 8px solid #000;*/
+}
+
+body {
+    color: #333333;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+
+	background-size: calc(100% / 8);
+	background-image: linear-gradient(to right, #F2F2F2 1px, transparent 1px);
+}
+
+a {
+	/*color: #0829CC;*/
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(8,41,204,1);
+}
+
+a:hover,
+.homepage div ol li a:hover {
+	color: blue;
+	border-bottom-color: blue;
+
+	transition: color .3s ease-out;
+	-moz-transition: color .3s ease-out;
+	-webkit-transition: color .3s ease-out;
+	-o-transition: color .3s ease-out;
+}
+
+a:visited {
+	border-bottom-color: #782AA1;
+}
+
+a:visited:hover {
+	color: #782AA1;
+}
+
+a:active {
+	color: #DE1000;
+	border-bottom-color: #DE1000;
+}
+
+header,
+main {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 32px calc(100% / 8);
+}
+
+header h4 {
+	float: left;
+	margin: 0;
+}
+
+h4 {
+	color: rgba(0,0,0,0.8);
+	font-weight: 500;
+	letter-spacing: 0.2px;
+}
+
+header nav {
+	float: right;
+	font-size: 0.875em;
+}
+
+header nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.back {
+	float: none;
+}
+
+.back a {
+	border: none;
+}
+
+.back ul li a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	background: #000000;
+}
+
+.back img {
+	padding: 11px;
+}
+
+.back ul li a:hover {
+	background: blue;
+
+	transition: background .3s ease-out;
+	-moz-transition: background .3s ease-out;
+	-webkit-transition: background .3s ease-out;
+	-o-transition: background .3s ease-out;
+}
+
+.description,
+.about {
+	color: rgba(0,0,0,0.8);
+	font-size: 0.875em;
+	margin: 0 auto;
+	line-height: 1.5em;
+	padding: 0 calc(100% / 8) 0 calc(100% / 8);
+}
+
+.homepage div {
+	float: left;
+	width: 50%;
+}
+
+.homepage h4 {
+	margin: 1em 0;
+}
+
+.homepage div ol {
+	margin: 0;
+	padding-left: 44px;
+}
+
+.homepage div ol li {
+	color: rgba(0,0,0,0.2);
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size: 1.5em;
+	height: 64px;
+	letter-spacing: 0.3px;
+	line-height: 2em;
+	margin-bottom: 16px;
+}
+
+.homepage div ol li a {
+	color: rgba(0,0,0,1);
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 64px;
+	letter-spacing: 0.4px;
+
+	border-bottom: 3px solid rgba(8,41,204,1);
+	text-decoration: none;
+}
+
+
+/*li.credytag a:hover {
+	color: rgba(77,182,172,1);
+	border-bottom: 3px solid rgba(77,182,172,1);
+}
+
+li.triptailor a:hover {
+	color: rgba(75,80,141,1)
+}
+
+li.goals a:hover {
+	color: rgba(0,82,204,1);
+}
+
+li.booking a:hover {
+	color: rgba(0,159,226,1);
+}
+*/
+
+footer {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 calc(100% / 8) 32px;
+}
+
+footer h4 {
+	margin: 16px 0 16px;
+}
+
+footer nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer nav ul li {
+	float: left;
+	margin: 16px 0;
+	font-size: 0.875em;
+	width: calc(100% / 6);
+}
+
+figcaption {
+	color: rgba(0,0,0,0.4);
+	font-size: 0.875em;
+	line-height: 1.5em;
+	margin: 0px 0 16px;
+}
+
+/*About*/
+
+.about figure {
+	margin: 0 auto 24px;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+    	background-size: calc(100% / 4);
+    }
+
+    header,
+    main,
+    footer {
+    	padding: 24px;
+    }
+
+    .description,
+    .homepage,
+    .about {
+    	padding: 0 24px 24px;
+    }
+
+    .homepage div {
+    	width: 100%;
+    	padding: 0 0 24px;
+    }
+
+    .homepage div ol li {
+    	margin-bottom: 0;
+    }
+
+    footer {
+    	padding: 24px 0;
+    }
+
+    footer h4 {
+    	padding: 0 24px;
+    }
+
+    footer nav ul li {
+    	box-sizing: border-box;
+    	width: calc(100% / 4);
+    	padding-left: 24px;
+    }
+
+    /*About*/
+
+    .about figure img {
+    	width: 100%;
+    }
+}
