@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<title>Booking.com | Serguei Orozco</title>
+	<link rel="shortcut icon" href="../assets/favicon.png" type="image/png">
+</head>
+
+<body class="pdetail booking">
+
+	<header>
+		<nav class="back">
+			<ul>
+				<li><a href="../index.html"><img src="../images/arrow-left.svg" alt="Back Button"></a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main class="about">
+		
+		<figure>
+		    
+		    <figcaption>Caption</figcaption>
+		</figure>
+
+		<div class="columns">
+			<h1>Booking.com</h1>
+			<div class="column">
+				<div class="delement">
+					<h4>Project</h4>
+					<p>Booking.com Hackathon</p>
+				</div>
+				<div class="delement">
+					<h4>Role</h4>
+					<p>Product Designer</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="delement">
+					<h4>Date</h4>
+					<p><time datetime="2017-06-11">June 2017</time></p>
+				</div>
+				<div class="delement">
+					<h4>Prototype</h4>
+					<p><a href="#" target="_blank">InVision</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns">
+			<h2>Overview</h2>
+			<p>As <strong>a person who is planning a trip, I want to ask for recommendations in my destination</strong> so that <strong>I can plan my trip and choose an accommodation based on a location</strong>.</p>
+			<p>Make the most of your time and money, plan your trip and stay at the ideal place for your next trip based on recommendations from <strong>Booking.com</strong> and your friends.</p>
+		</div>
+
+		<div class="columns">
+			<h2>Problem Statement</h2>
+			<p>During June 2017, <strong>Booking.com</strong> organized a <em>hackathon</em> in the city of Guadalajara. The challenge was to solve the question:</p>
+			<blockquote>What would you do to empower people to experience the world?</blockquote>
+			<p>For 48 hours we would work as a team to understand the problem, validate the idea, create a functional demo and present it to the jury. During the event, we had the help of Booking experts to understand their business, their users and their behavior.</p>
+			<p>Due to the short time we had, we decided that through a small <em>Design Sprint</em> we could achieve a better solution.</p>
+			<p>We started by sharing our experiences, points of friction and assumptions about the improvements that could exist to help when booking a place. We came to the conclusion that with the help of recommendations a user could plan their trip and find the ideal location to stay based on their plans.</p>
+		</div>
+
+		<div class="columns">
+			<h2>Users and audience</h2>
+			<p>For the hackathon we focused on the "<em>captains</em>" of the "<em>crew</em>", who usually lead the organization of the trip. People who who like planning. They usually read travel guides (<em>Lonely Planet</em>, <em>Rick Steve's</em>), watch video blogs and download maps to their mobile before starting a trip.</p>
+			<p>Once they have a basis for the trip, they share to listen to suggestions and meet the needs of all the companions. They plan the trip in spreadsheets in order to have an overview of everything they can do and assign activities for each day of the trip.</p>
+		</div>
+
+		<div class="columns">
+			<h2>Team</h2>
+			<p>Initially, two partners (Eduardo and Antonio) and I thought about creating a team to participate in the event. Once there, a designer from the <em>UX Nights Guadalajara</em> community (Carlos) joined the team.</p>
+			<p>Carlos and I had experience carrying out <em>Design Sprints</em>, so we organized that part of the activities. I created a document of requirements that was being filled out with the information we decided on.. We were all very involved during the small <em>Design Sprint</em>, where we later divided the tasks to create the functional demo.</p>
+		</div>
+
+		<div class="columns">
+			<h2>Constraints</h2>
+			<p>Because we only had <strong>48 hours</strong>, much of the information was based on suppositions and information obtained from interviewing Booking experts.</p>
+			<p>By having two developers in the team, we did not know if we would finish the development of the prototype, so we created two prototypes (one with code and another using <em>InVision</em>) which confused the judges.</p>
+		</div>
+
+		<div class="columns">
+			<h2>Design Process</h2>
+			<p>We started the <em>Design Sprint</em> by understanding the problem: What is the current situation? How is the problem solved? What are the problems that arise?</p>
+			<p>Once we all shared our experiences, we created a list to summarize the current situation:
+				<ul>
+					<li>Many tabs in the browser (different pages to book hotels, maps, place reviews)</li>
+					<li>Individual work ("Captain" of the "crew")</li>
+					<li>Where to start? Locals vs Reviews</li>
+					<li>Cost and time (transport)</li>
+				</ul>
+			</p>
+			<p>Taking into account this information and the question raised by <strong>Booking.com</strong> (what would you do to empower people to experience the world?), we decided to develop a feature to help travelers plan their trips with reviews and recommendations from <strong>Booking.com</strong> and their friends.</p>
+			<p>Our hypothesis was that this feature was going to generate more engagement with the travelers and make them stay longer in the website, at the same time, it will create a new channel when the user invites their friends to give them recommendations.</p>
+			<p>We fill out a template of requirements: define the user's goal, the assumptions and who would be the stakeholders. We created a list of the tasks that the user would perform to achieve a goal, which helped us to define the features and later the scenarios. Once we defined the flows for the demo, we move to the <em>User Interface</em>.</p>
+			<p>We made a <em>Crazy's 8</em> to see the ideas that everyone had about the User Interface. We voted and divided the work: while Carlos and I worked in the mockups, Antonio would work in the backend of the application and Eduardo in the front-end.</p>
+			<p>How would we include this new feature in the current flow of Booking.com? We decided to add two questions when making a search to have a context of the trip and to suggest initial recommendations (by the <strong>Booking.com</strong> team),so we add a field for "Things To Do" and budget.</p>
+			<p>The results page was divided into three tabs: hotels (which is the current view of Booking.com), recommendations and My Trip, which would be a list of recommendations that the user has saved.</p>
+			<p>In <em>My Trip</em> section, the "<em>captain</em>" can add his "<em>crew</em>" to the trip, share it and add places.</p>
+			<p>Other stakeholder comes into action when they visit someone else's trip. They could see general information (dates, people who will make the trip), as well as a list of previously saved places.</p>
+			<p>They could write recommendations and link places so that travelers can review them and decide if they want to include them in their trip.</p>
+			<p>To measure the success of the feature, we would analyze three variables:
+				<ul>
+					<li>Traffic on all three tabs</li>
+					<li>Number of users</li>
+					<li>Number of reservations</li>
+				</ul>
+			</p>
+			<p>The ideal scenario would be an increase in the time the user spends in the new tabs, the number of times shared by the trips and the number of reservations made from places saved in those lists.</p>
+		</div>
+
+		<div class="columns">
+			<h2>The Result</h2>
+			<p>After two days of work and a few hours of sleep we finished the functional prototype, a backup prototype (in InVision) and the presentation.</p>
+		</div>
+
+		<div class="columns">
+			<h2>Retrospective</h2>
+			<p><strong>Different approaches</strong><br />It was very interesting to see the different approaches to solve the same problem. From bots that helped you book to a virtual key to facilitate the check-in process. It was very enriching to see the final results.</p>
+			<p><strong>Link places</strong><br />Once we made the demo I realized that the way in which places were linked to the recommendations was not very natural, the text "Link your comment" does not explain much and can be interpreted in many ways.</p>
+			<p><strong>Booking.com business</strong><br />The integration with Booking.com could be better. The business of <strong>Booking.com</strong> consists in booking places, so we should have made better use of it and put more emphasis on obtaining reservations.</p>
+		</div>
+
+	</main>
+
+	<footer>
+		<h4>Contact</h4>
+		<nav>
+			<ul>
+				<li><a href="https://www.instagram.com/chekiesco/" target="_blank">Instagram</a></li>
+				<li><a href="https://www.twitter.com/chekiesco/" target="_blank">Twitter</a></li>
+				<li><a href="https://www.linkedin.com/in/sergueiorozco/" target="_blank">LinkedIn</a></li>
+				<li><a href="mailto:serguei@sergueiorozco.com" target="_blank">Email</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</body>
+
+</html>

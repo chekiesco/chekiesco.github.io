@@ -54,9 +54,9 @@ header h4 {
 	margin: 0;
 }
 
-h4 {
+.homepage h4 {
 	color: rgba(0,0,0,0.8);
-	font-weight: 500;
+	font-weight: 600;
 	letter-spacing: 0.2px;
 }
 
@@ -197,8 +197,70 @@ figcaption {
 /*About*/
 
 .about figure {
+	width: 100%;
 	margin: 0 auto 24px;
 	text-align: center;
+}
+
+.about figure img {
+	width: 66.6%;
+}
+
+.pdetail figure img {
+	width: 100%;
+}
+
+/*Project Detail*/
+
+.pdetail {
+	/*font-size: 18px;*/
+	border: 8px solid #4DB6AC;
+}
+
+.pdetail.credytag { border-color: /*#4DB6AC*/#53437D; }
+.pdetail.triptailor { border-color: #48ABCB/*#4B508D*/; }
+.pdetail.booking { border-color: /*#003580*/#009EE5; }
+
+.pdetail header,
+.pdetail main {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 32px calc((100% / 8) - 6px);
+}
+
+.columns {
+	width: 66.66%;
+	clear: both;
+	margin: 0 auto 40px;
+	/*margin-bottom: 32px;*/
+}
+
+.column {
+	float: left;
+	width: 50%;
+	margin: 16px auto 32px;
+}
+
+.columns h2 {
+	letter-spacing: 0.2px;
+	/*padding-bottom: 8px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);*/
+}
+
+.columns h4 {
+	/*color: rgba(0,0,0,0.4);*/
+	font-weight: 600;
+	letter-spacing: 0.2px;
+	margin: 0px;
+}
+
+.columns blockquote {
+	font-style: italic;
+	color: rgba(0,0,0,0.6);
+}
+
+.column p {
+	margin: 0 auto 8px;
 }
 
 
@@ -247,4 +309,15 @@ figcaption {
     .about figure img {
     	width: 100%;
     }
+
+    .pdetail header,
+    .pdetail main {
+    	padding: 32px calc((100% / 8) - 32px);
+    }
+
+    .columns {
+    	width: 100%;
+    }
+
+
 }
