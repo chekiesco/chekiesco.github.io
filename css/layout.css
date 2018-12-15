@@ -220,6 +220,7 @@ figcaption {
 .pdetail.credytag { border-color: /*#4DB6AC*/#53437D; }
 .pdetail.triptailor { border-color: #48ABCB/*#4B508D*/; }
 .pdetail.booking { border-color: /*#003580*/#009EE5; }
+.pdetail.goals { border-color: #0052CC; }
 
 .pdetail header,
 .pdetail main {
@@ -233,6 +234,8 @@ figcaption {
 	clear: both;
 	margin: 0 auto 40px;
 	/*margin-bottom: 32px;*/
+	font-size: 1.1em;
+	line-height: 2em;
 }
 
 .column {
