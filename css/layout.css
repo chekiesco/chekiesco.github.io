@@ -207,7 +207,8 @@ figcaption {
 }
 
 .pdetail figure img {
-	width: 100%;
+	width: 96%;
+	margin-bottom: 8px;
 }
 
 /*Project Detail*/
@@ -264,6 +265,13 @@ figcaption {
 
 .column p {
 	margin: 0 auto 8px;
+}
+
+.screen {
+	/*box-shadow: 0 24px 32px 0 rgba(0,0,0,.05);*/
+	/*margin-bottom: 16px;*/
+	/*border-radius: 8px;*/
+	border: 1px solid #EBEBEB;
 }
 
 
